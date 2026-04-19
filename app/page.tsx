@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, BookOpen, Github, Mic2, UserRound } from "lucide-react";
+import { FootprintCarousel } from "@/components/footprint-carousel";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -88,15 +89,7 @@ export default async function HomePage() {
                   key={item.title}
                   className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5"
                 >
-                  <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-white/10 bg-surface-secondary">
-                    <Image
-                      src={item.images[0]}
-                      alt={item.imageAlt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 960px"
-                    />
-                  </div>
+                  <FootprintCarousel images={item.images} imageAlt={item.imageAlt} />
                   <div className="space-y-4 p-5 sm:p-6">
                     <div className="flex flex-wrap items-center gap-3">
                       <Badge variant="secondary">{item.stage}</Badge>
