@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "SF Pro Display", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", "Menlo", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(137, 173, 255, 0.18), transparent 30%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.08), transparent 25%),
+    linear-gradient(180deg, #04060a 0%, #070b11 100%);
+  color: #f7f8fb;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(168, 202, 255, 0.35);
+  color: #ffffff;
+}
+
+.glass-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    rgba(12, 16, 24, 0.78);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.article-content {
+  color: #dbe3f1;
+  line-height: 1.85;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  color: #f7f8fb;
+  line-height: 1.2;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.article-content h1 {
+  font-size: 2.4rem;
+}
+
+.article-content h2 {
+  font-size: 1.65rem;
+}
+
+.article-content h3 {
+  font-size: 1.25rem;
+}
+
+.article-content p,
+.article-content ul,
+.article-content ol,
+.article-content blockquote,
+.article-content pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 1.35rem;
+}
+
+.article-content li + li {
+  margin-top: 0.5rem;
+}
+
+.article-content a {
+  color: #dfeaff;
+  text-decoration: underline;
+  text-decoration-color: rgba(223, 234, 255, 0.45);
+  text-underline-offset: 3px;
+}
+
+.article-content blockquote {
+  border-left: 3px solid rgba(164, 195, 255, 0.45);
+  padding-left: 1rem;
+  color: #c8d4e9;
+}
+
+.article-content code {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.15rem 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
+
+.article-content pre {
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.1rem;
+  background: rgba(8, 11, 17, 0.96);
+  padding: 1rem 1.1rem;
+}
+
+.article-content pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
