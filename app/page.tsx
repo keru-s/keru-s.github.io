@@ -20,8 +20,15 @@ export default async function HomePage() {
           <section className={cn(sectionClass, "bg-hero-glow")}>
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-                <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-white/10 bg-gradient-to-br from-[#DCE7FF] via-[#9CB8FF] to-[#2D3E66] text-3xl font-semibold text-[#09111F] shadow-panel">
-                  宋
+                <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border border-white/10 bg-white/5 shadow-panel sm:h-28 sm:w-28">
+                  <Image
+                    src="/images/profile-songkeru.png"
+                    alt="宋科儒个人头像"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 96px, 112px"
+                    priority
+                  />
                 </div>
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-center gap-3">
