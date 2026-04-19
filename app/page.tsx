@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, BookOpen, Github, Mic2, UserRound } from "lucide-react";
+import { ArrowUpRight, BookOpen, Mic2, UserRound } from "lucide-react";
 import { FootprintCarousel } from "@/components/footprint-carousel";
+import { GitHubIcon } from "@/components/github-icon";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -180,7 +181,7 @@ export default async function HomePage() {
         <Reveal>
           <section id="repos" className={sectionClass}>
             <div className="flex items-center gap-2 text-sm text-[#DCE7FF]">
-              <Github className="h-4 w-4" />
+              <GitHubIcon className="h-4 w-4" />
               coding 仓库
             </div>
             <h2 className="mt-4 text-3xl font-semibold text-white">代表项目</h2>
