@@ -123,7 +123,7 @@ export const projects: ProjectItem[] = [
   {
     title: "Mac 原生 Todo APP",
     description:
-      "一款面向桌面场景的原生待办应用，适合展示从交互到交付的完整产品思路。",
+      "使用 Swift 编写的原生待办应用，支持层级嵌套",
     href: "https://github.com/keru-s/todo-block",
     highlights: ["Mac 原生应用", "任务管理", "桌面体验"]
   },
