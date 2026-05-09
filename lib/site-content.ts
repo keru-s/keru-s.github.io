@@ -128,6 +128,13 @@ export const projects: ProjectItem[] = [
     highlights: ["Mac 原生应用", "任务管理", "桌面体验"]
   },
   {
+    title: "Excel 表格数据匹配工具",
+    description:
+      "一个面向日常表格处理的桌面工具，支持两个 Excel 或 CSV 文件按指定列匹配，并导出新的结果文件。",
+    href: "https://github.com/keru-s/excel-table-data-matcher",
+    highlights: ["桌面工具", "Excel/CSV", "数据匹配"]
+  },
+  {
     title: "Python 打造的机票预订系统",
     description:
       "用 Python 构建机票预订流程，覆盖业务流程设计、系统组织和完整功能串联。",
