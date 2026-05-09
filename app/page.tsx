@@ -34,9 +34,9 @@ export default async function HomePage() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-center gap-3">
-                    <Badge variant="secondary">AI/LLM 工程师</Badge>
+                    <Badge variant="secondary">AI 研发工程师</Badge>
                     <Badge variant="outline">阿里国际 Java 工程师</Badge>
-                    <Badge variant="outline">6 年开发经验</Badge>
+                    <Badge variant="outline">7 年开发经验</Badge>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-[0.35em] text-muted">个人主页</p>
