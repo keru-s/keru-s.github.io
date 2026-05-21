@@ -24,7 +24,7 @@ export default async function HomePage() {
               <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
                 <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border border-white/10 bg-white/5 shadow-panel sm:h-28 sm:w-28">
                   <Image
-                    src="/images/profile-songkeru.png"
+                    src="/images/profile-songkeru.webp"
                     alt="宋科儒个人头像"
                     fill
                     className="object-cover"

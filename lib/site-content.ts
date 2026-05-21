@@ -92,7 +92,7 @@ export const footprints: FootprintItem[] = [
     description:
       "详细介绍了 JVM 内存回收机制，以及升级到 JDK11 后 G1GC 需要调整的 JVM 参数。",
     imageAlt: "阿里云开发者公众号文章截图",
-    images: ["/images/footprints/aliyun-article.png"],
+    images: ["/images/footprints/aliyun-article.webp"],
     actions: [
       {
         href: "https://mp.weixin.qq.com/s/-GcKchuSEjn46BEDM8bnGA",
@@ -108,7 +108,7 @@ export const footprints: FootprintItem[] = [
     theme: "《让 AI 替你干体力活》",
     description: "介绍如何使用内部工具进行提效。",
     imageAlt: "阿里集团内部分享配图",
-    images: ["/images/footprints/ali-internal-share.png"],
+    images: ["/images/footprints/ali-internal-share.webp"],
     actions: [
       {
         href: "https://zhuanlan.zhihu.com/p/1987571817444034394",
