@@ -42,14 +42,14 @@ export const footprints: FootprintItem[] = [
     description: "介绍复杂项目中如何使用 Qoder 进行开发。",
     imageAlt: "2025 云栖大会现场照片",
     images: [
-      "/images/footprints/yunqi-2025-0.jpeg",
-      "/images/footprints/yunqi-2025-1.jpeg",
-      "/images/footprints/yunqi-2025-2.jpeg",
-      "/images/footprints/yunqi-2025-3.jpeg",
-      "/images/footprints/yunqi-2025-4.jpeg",
-      "/images/footprints/yunqi-2025-5.jpeg",
-      "/images/footprints/yunqi-2025-6.jpeg",
-      "/images/footprints/yunqi-2025-7.jpeg"
+      "/images/footprints/yunqi-2025-0.webp",
+      "/images/footprints/yunqi-2025-1.webp",
+      "/images/footprints/yunqi-2025-2.webp",
+      "/images/footprints/yunqi-2025-3.webp",
+      "/images/footprints/yunqi-2025-4.webp",
+      "/images/footprints/yunqi-2025-5.webp",
+      "/images/footprints/yunqi-2025-6.webp",
+      "/images/footprints/yunqi-2025-7.webp"
     ],
     actions: []
   },
@@ -62,14 +62,14 @@ export const footprints: FootprintItem[] = [
       "接手十年老项目像看恐怖片？文档失踪、逻辑爆炸、踩雷不断？这次分享重点介绍如何使用 Qoder 建立心智地图，在代码迷宫中穿梭自如，提升需求交付效率，实现“左手咖啡右手 AI”的优雅蜕变。",
     imageAlt: "AiDD 深圳站现场照片",
     images: [
-      "/images/footprints/aidd-shenzhen-0.jpeg",
-      "/images/footprints/aidd-shenzhen-1.jpeg",
-      "/images/footprints/aidd-shenzhen-2.jpeg",
-      "/images/footprints/aidd-shenzhen-3.jpeg",
-      "/images/footprints/aidd-shenzhen-4.jpeg",
-      "/images/footprints/aidd-shenzhen-5.jpeg",
-      "/images/footprints/aidd-shenzhen-6.jpeg",
-      "/images/footprints/aidd-shenzhen-7.jpeg"
+      "/images/footprints/aidd-shenzhen-0.webp",
+      "/images/footprints/aidd-shenzhen-1.webp",
+      "/images/footprints/aidd-shenzhen-2.webp",
+      "/images/footprints/aidd-shenzhen-3.webp",
+      "/images/footprints/aidd-shenzhen-4.webp",
+      "/images/footprints/aidd-shenzhen-5.webp",
+      "/images/footprints/aidd-shenzhen-6.webp",
+      "/images/footprints/aidd-shenzhen-7.webp"
     ],
     actions: [
       {
