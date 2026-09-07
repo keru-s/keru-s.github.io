@@ -9,9 +9,9 @@ const buttonVariants = cva(
         default:
           "bg-white text-surface hover:bg-white/90",
         secondary:
-          "bg-[#DCE7FF] text-[#09111F] hover:bg-[#cddcff]",
+          "bg-white/90 text-surface hover:bg-white",
         ghost:
-          "border border-white/10 bg-white/5 text-white hover:border-white/20 hover:bg-white/10"
+          "border border-white/[0.09] bg-white/[0.03] text-white/90 hover:border-white/[0.16] hover:bg-white/[0.06] hover:text-white"
       },
       size: {
         sm: "h-10 px-4 text-sm",

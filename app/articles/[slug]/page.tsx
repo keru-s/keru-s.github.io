@@ -37,8 +37,8 @@ export default async function ArticleDetailPage({
   const article = await getArticleBySlug(slug);
 
   return (
-    <main className="mx-auto min-h-screen max-w-4xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
-      <article className="glass-panel rounded-[32px] p-6 sm:p-8 lg:p-10">
+    <main className="mx-auto min-h-screen max-w-4xl px-4 pb-10 pt-24 sm:px-6 sm:pb-12 sm:pt-28 lg:px-8">
+      <article className="panel rounded-3xl p-6 sm:p-8 lg:p-10">
         <Link
           href="/articles"
           className={cn(buttonVariants({ variant: "ghost", size: "sm" }), "w-fit")}
@@ -47,7 +47,7 @@ export default async function ArticleDetailPage({
           返回文章列表
         </Link>
 
-        <header className="mt-8 border-b border-white/10 pb-8">
+        <header className="mt-8 border-b border-white/[0.07] pb-8">
           <div className="flex flex-wrap gap-2">
             {article.tags.map((tag) => (
               <Badge key={tag} variant="secondary">
@@ -55,7 +55,7 @@ export default async function ArticleDetailPage({
               </Badge>
             ))}
           </div>
-          <h1 className="mt-5 text-4xl font-semibold text-white sm:text-5xl">
+          <h1 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             {article.title}
           </h1>
           <p className="mt-4 text-sm leading-7 text-muted-foreground">

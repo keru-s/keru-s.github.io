@@ -50,6 +50,19 @@ export async function getAllArticles(): Promise<ArticleMeta[]> {
   );
 }
 
+const featuredSlugs = [
+  "vllm-prefix-cache-slowdown",
+  "agent-engineering-experience",
+  "skill-engineering-experience"
+];
+
+export async function getFeaturedArticles(): Promise<ArticleMeta[]> {
+  const articles = await getAllArticles();
+  return featuredSlugs
+    .map((slug) => articles.find((article) => article.slug === slug))
+    .filter((article): article is ArticleMeta => Boolean(article));
+}
+
 export async function getArticleBySlug(slug: string): Promise<ArticleDetail> {
   const filePath = path.join(articlesDirectory, `${slug}.mdx`);
 

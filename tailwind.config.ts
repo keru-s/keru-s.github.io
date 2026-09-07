@@ -18,35 +18,29 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#05070B",
-        foreground: "#F7F8FB",
-        border: "rgba(255, 255, 255, 0.1)",
+        background: "#0B0C0F",
+        foreground: "#F4F5F7",
+        border: "rgba(255, 255, 255, 0.08)",
         card: {
-          DEFAULT: "rgba(12, 16, 24, 0.78)",
-          foreground: "#F7F8FB"
+          DEFAULT: "rgba(255, 255, 255, 0.02)",
+          foreground: "#F4F5F7"
         },
         muted: {
-          DEFAULT: "#8790A2",
-          foreground: "#CBD3E1"
+          DEFAULT: "#7E8592",
+          foreground: "#B3B9C4"
         },
         accent: {
-          DEFAULT: "#DDE8FF",
-          foreground: "#09111F"
+          DEFAULT: "#A9BFDF",
+          foreground: "#0B0C0F"
         },
         surface: {
-          DEFAULT: "#0D1017",
-          secondary: "#111623",
-          tertiary: "#171E2B"
+          DEFAULT: "#0E1015",
+          secondary: "#12151C",
+          tertiary: "#181C25"
         }
       },
-      backgroundImage: {
-        "hero-glow":
-          "radial-gradient(circle at top left, rgba(120, 180, 255, 0.20), transparent 42%), radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.12), transparent 32%)",
-        "panel-glow":
-          "linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02))"
-      },
       boxShadow: {
-        panel: "0 24px 80px rgba(0, 0, 0, 0.45)"
+        panel: "0 24px 60px rgba(0, 0, 0, 0.35)"
       },
       borderRadius: {
         "4xl": "2rem"

@@ -128,17 +128,24 @@ export const projects: ProjectItem[] = [
     highlights: ["Mac 原生应用", "任务管理", "桌面体验"]
   },
   {
-    title: "Excel 表格数据匹配工具",
+    title: "TouchFish 扩展配置器",
     description:
-      "一个面向日常表格处理的桌面工具，支持两个 Excel 或 CSV 文件按指定列匹配，并导出新的结果文件。",
-    href: "https://github.com/keru-s/excel-table-data-matcher",
-    highlights: ["桌面工具", "Excel/CSV", "数据匹配"]
+      "面向 ELEKSMAKER 摸鱼二代 / TF05 的 Web Serial 按键配置扩展页面，补齐官方配置器未开放的 F13–F24、macOS 快捷键、自定义组合键与旋钮配置能力。",
+    href: "https://github.com/keru-s/touchfish-extended-configurator",
+    highlights: ["Web Serial", "硬件协议", "GitHub Pages"]
   },
   {
-    title: "Python 打造的机票预订系统",
+    title: "Adversarial Review for Agents",
     description:
-      "用 Python 构建机票预订流程，覆盖业务流程设计、系统组织和完整功能串联。",
-    href: "https://github.com/keru-s/AirTicket-Booking-System",
-    highlights: ["Python", "业务系统", "预订流程"]
+      "跨 Agent 对抗性审查 Skill：让独立评审 Agent 对计划、代码与 diff 严格挑刺，宿主 Agent 修复并复审直至通过，支持 Codex、Kimi Code 等运行时。",
+    href: "https://github.com/keru-s/adversarial-review-for-agents",
+    highlights: ["Agent Skill", "对抗性审查", "多运行时"]
+  },
+  {
+    title: "QQ Mediary Stack",
+    description:
+      "在 QQ 里发一个片名即全自动观影：搜索资源、转存夸克网盘、生成 STRM、极影视刮削在线播放，支持剧集自动追更与缺集补齐的 NAS 一体化编排。",
+    href: "https://github.com/keru-s/qq-mediary-stack",
+    highlights: ["NAS 编排", "QQ 机器人", "自动化追更"]
   }
 ];
