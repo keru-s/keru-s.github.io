@@ -123,9 +123,16 @@ export const projects: ProjectItem[] = [
   {
     title: "Mac 原生 Todo APP",
     description:
-      "使用 Swift 编写的原生待办应用，支持层级嵌套",
+      "SwiftUI 外壳 + AppKit 编辑器 + SwiftData 本地存储的原生 macOS 待办应用：支持 4 层任务嵌套、键盘优先操作、按日期自动分组、菜单栏与主窗口实时同步，以及撤销重做与拖拽排序。",
     href: "https://github.com/keru-s/todo-block",
-    highlights: ["Mac 原生应用", "任务管理", "桌面体验"]
+    highlights: ["SwiftUI / AppKit", "SwiftData", "键盘优先"]
+  },
+  {
+    title: "Humanize Tech Writing",
+    description:
+      "面向 Coding Agent 的中文技术写作 Skill：清除 AI 生造词、工程黑话、英文逐词直译和需要二次解码的隐喻，同时保证语义安全——保留事实、项目术语与 MUST/SHOULD/MAY 强弱语义，并按 README、API 注释、行内注释、changelog 等文档类型应用不同规则。",
+    href: "https://github.com/keru-s/humanize-tech-writing",
+    highlights: ["Agent Skill", "语义安全", "文档类型感知"]
   },
   {
     title: "TouchFish 扩展配置器",
