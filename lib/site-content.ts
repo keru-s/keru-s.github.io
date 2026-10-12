@@ -141,7 +141,8 @@ export const projects: ProjectItem[] = [
     description:
       "面向 ELEKSMAKER 摸鱼二代 / TF05 的 Web Serial 按键配置扩展页面，补齐官方配置器未开放的 F13–F24、macOS 快捷键、自定义组合键与旋钮配置能力。",
     href: "https://github.com/keru-s/touchfish-extended-configurator",
-    highlights: ["Web Serial", "硬件协议", "GitHub Pages"]
+    highlights: ["Web Serial", "硬件协议", "GitHub Pages"],
+    video: "/videos/touchfish-promo.mp4"
   },
   {
     title: "Adversarial Review for Agents",

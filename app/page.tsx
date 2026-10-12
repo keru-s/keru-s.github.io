@@ -4,7 +4,6 @@ import { ArrowUpRight, BookOpen, Mic2, UserRound } from "lucide-react";
 import { FootprintCarousel } from "@/components/footprint-carousel";
 import { GitHubIcon } from "@/components/github-icon";
 import { HeroBackground } from "@/components/hero-background";
-import { ProjectVideo } from "@/components/project-video";
 import { EnterLine, FadeIn, Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -113,32 +112,42 @@ export default async function HomePage() {
             <div className="mt-8 space-y-4">
               {projects.map((project, index) => (
                 <Reveal key={project.title} delay={Math.min(index * 0.06, 0.3)} y={10}>
-                  <Link
-                    href={project.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={cn(cardClass, "group p-5 sm:p-6")}
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h3 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                          {project.title}
-                        </h3>
-                        <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">
-                          {project.description}
-                        </p>
-                        {project.video ? <ProjectVideo src={project.video} /> : null}
+                  <div className={cn(cardClass, "group p-5 sm:p-6")}>
+                    <Link
+                      href={project.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="block"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
+                            {project.title}
+                          </h3>
+                          <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">
+                            {project.description}
+                          </p>
+                        </div>
+                        <ArrowUpRight className="mt-1.5 h-4 w-4 shrink-0 text-muted transition group-hover:text-white" />
                       </div>
-                      <ArrowUpRight className="mt-1.5 h-4 w-4 shrink-0 text-muted transition group-hover:text-white" />
-                    </div>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.highlights.map((highlight) => (
-                        <Badge key={highlight} variant="secondary">
-                          {highlight}
-                        </Badge>
-                      ))}
-                    </div>
-                  </Link>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {project.highlights.map((highlight) => (
+                          <Badge key={highlight} variant="secondary">
+                            {highlight}
+                          </Badge>
+                        ))}
+                      </div>
+                    </Link>
+                    {project.video ? (
+                      <video
+                        src={project.video}
+                        controls
+                        playsInline
+                        preload="metadata"
+                        className="mt-4 w-full rounded-xl border border-white/[0.07] bg-black/40"
+                      />
+                    ) : null}
+                  </div>
                 </Reveal>
               ))}
             </div>
