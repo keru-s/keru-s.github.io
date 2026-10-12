@@ -4,6 +4,7 @@ import { ArrowUpRight, BookOpen, Mic2, UserRound } from "lucide-react";
 import { FootprintCarousel } from "@/components/footprint-carousel";
 import { GitHubIcon } from "@/components/github-icon";
 import { HeroBackground } from "@/components/hero-background";
+import { ProjectVideo } from "@/components/project-video";
 import { EnterLine, FadeIn, Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -126,6 +127,7 @@ export default async function HomePage() {
                         <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">
                           {project.description}
                         </p>
+                        {project.video ? <ProjectVideo src={project.video} /> : null}
                       </div>
                       <ArrowUpRight className="mt-1.5 h-4 w-4 shrink-0 text-muted transition group-hover:text-white" />
                     </div>

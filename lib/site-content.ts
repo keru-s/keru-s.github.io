@@ -18,6 +18,7 @@ export type ProjectItem = {
   description: string;
   href: string;
   highlights: string[];
+  video?: string;
 };
 
 export const profile = {
@@ -125,7 +126,8 @@ export const projects: ProjectItem[] = [
     description:
       "SwiftUI 外壳 + AppKit 编辑器 + SwiftData 本地存储的原生 macOS 待办应用：支持 4 层任务嵌套、键盘优先操作、按日期自动分组、菜单栏与主窗口实时同步，以及撤销重做与拖拽排序。",
     href: "https://github.com/keru-s/todo-block",
-    highlights: ["SwiftUI / AppKit", "SwiftData", "键盘优先"]
+    highlights: ["SwiftUI / AppKit", "SwiftData", "键盘优先"],
+    video: "/videos/todo-block-intro.mp4"
   },
   {
     title: "Humanize Tech Writing",
